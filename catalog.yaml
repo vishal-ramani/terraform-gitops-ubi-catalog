@@ -297,7 +297,7 @@ categories:
         softwareProvider: ""
         type: gitops
         name: terraform-gitops-ubi
-        description: asdf
+        description: "That module will add a new 'Argo CD config' to deploy a 'ubi' container to OpenShift"
         tags:
           - tools
           - gitops
@@ -306,6 +306,7 @@ categories:
               - kubernetes
               - ocp3
               - ocp4
+            version: v0.0.1
             dependencies:
               - id: gitops
                 refs:
@@ -418,7 +419,6 @@ categories:
               - name: cluster_type
                 description: The cluster type (openshift or kubernetes)
                 default: '"openshift"'
-            version: v0.0.1
             outputs:
               - name: name
                 description: The name of the module

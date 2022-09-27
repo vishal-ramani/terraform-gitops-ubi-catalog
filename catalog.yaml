@@ -306,7 +306,7 @@ categories:
               - kubernetes
               - ocp3
               - ocp4
-            version: v0.0.7
+            version: v0.0.8
             dependencies:
               - id: gitops
                 refs:

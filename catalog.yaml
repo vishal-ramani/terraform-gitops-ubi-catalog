@@ -306,7 +306,7 @@ categories:
               - kubernetes
               - ocp3
               - ocp4
-            version: v0.0.1
+            version: v0.0.8
             dependencies:
               - id: gitops
                 refs:
@@ -405,13 +405,12 @@ categories:
                 moduleRef:
                   id: gitops
                   output: server_name
-              - name: enable_sso
-                type: bool
-                description: Flag indicating if oauth should be applied (only available for OpenShift)
-                default: true
               - name: cluster_type
                 description: The cluster type (openshift or kubernetes)
                 default: '"openshift"'
+              - name: command
+                description: Command to run in container
+                default: ""
             outputs:
               - name: name
                 description: The name of the module

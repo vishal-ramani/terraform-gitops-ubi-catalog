@@ -295,6 +295,9 @@ categories:
         displayName: terraform-gitops-guestbook-helm
       - cloudProvider: ""
         softwareProvider: ""
+        id: github.com/Vishal-Ramani/terraform-gitops-ubi
+        group: ""
+        displayName: terraform-gitops-ubi 
         type: gitops
         name: terraform-gitops-ubi
         description: "That module will add a new 'Argo CD config' to deploy a 'ubi' container to OpenShift"
@@ -423,10 +426,7 @@ categories:
               - name: layer
                 description: The layer where the module is deployed
               - name: type
-                description: The type of module where the module is deployed
-        id: github.com/Vishal-Ramani/terraform-gitops-ubi
-        group: ""
-        displayName: terraform-gitops-ubi        
+                description: The type of module where the module is deployed       
 providers:
   - name: ibm
     source: ibm-cloud/ibm
